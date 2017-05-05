@@ -143,6 +143,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 if (lp instanceof FlexboxLayoutManager.LayoutParams) {
                     FlexboxLayoutManager.LayoutParams flexboxLp = (FlexboxLayoutManager.LayoutParams) lp;
                     Random random = new Random();
+                    //随机宽度
                     int width  =random.nextInt(300)+200;
                     flexboxLp.width=width;
                     flexboxLp.setFlexGrow(1.0f);
