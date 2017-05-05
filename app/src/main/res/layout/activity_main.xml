@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qyhl2.flexboxlayoutdemo.MainActivity">
+
+    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/flexboxLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:flexWrap="wrap"
+        app:alignItems="flex_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="#43eeff"
+            app:layout_flexBasisPercent="80%"
+            android:gravity="center"
+            android:text="1" />
+
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="#ef3344"
+            app:layout_flexBasisPercent="50%"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            app:layout_alignSelf="baseline"
+            android:layout_margin="2dp"
+            app:layout_flexBasisPercent="80%"
+            android:background="#ee998f"
+            android:gravity="center"
+            android:text="3" />
+
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:background="#eeff22"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="#3322ff"
+            android:gravity="center"
+            android:text="5" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RecycleView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
